@@ -27,7 +27,9 @@ const input = shallowRef<undefined | string>(undefined);
 			</div>
 			<p class="mt-5 text-soft-white">
 				Tokens: 31
-				<span class="cursor-pointer rounded-full bg-neutral-400/80 px-[0.27rem] text-sm text-neutral-800">?</span>
+				<span class="cursor-pointer rounded-full bg-neutral-400/80 px-[0.27rem] text-sm text-neutral-800"
+					>?</span
+				>
 			</p>
 		</article>
 		<article class="grid grid-cols-1 gap-5 bg-stone-100/95 p-5 text-stone-600 sm:grid-cols-2">
@@ -57,7 +59,9 @@ const input = shallowRef<undefined | string>(undefined);
 				</div>
 				<p class="mt-3">
 					Tokens: 31
-					<span class="cursor-pointer rounded-full bg-neutral-500 px-[0.27rem] text-sm text-soft-white">?</span>
+					<span class="cursor-pointer rounded-full bg-neutral-500 px-[0.27rem] text-sm text-soft-white"
+						>?</span
+					>
 				</p>
 			</div>
 		</article>
