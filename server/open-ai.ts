@@ -1,13 +1,15 @@
 import { Configuration, OpenAIApi } from 'openai';
 
-console.log(process.env.OPENAI_API_KEY);
+console.log('runtime', useRuntimeConfig().openAiKey);
 
 const openai = new OpenAIApi(
 	new Configuration({
 		organization: 'org-G8S6VoM2BXVwAtJFe6uE0IH8',
-		apiKey: process.env.OPENAI_API_KEY
+		apiKey: useRuntimeConfig().openAiKey
 	})
 );
+
+useRuntimeConfig().openAiKey;
 
 export async function getEngines() {
 	const response = await openai.listEngines();
