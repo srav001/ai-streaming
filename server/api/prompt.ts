@@ -1,3 +1,10 @@
 import { getAnswer } from '../open-ai';
 
-export default defineEventHandler(async event => await getAnswer());
+export default defineEventHandler<{
+	query: {
+		fruit: string;
+		model: string;
+	};
+}>(async event => {
+	return await getAnswer(getQuery(event));
+});

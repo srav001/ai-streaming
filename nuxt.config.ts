@@ -3,6 +3,7 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	modules: ['@nuxtjs/tailwindcss'],
 	runtimeConfig: {
-		openAiKey: process.env.OPENAI_API_KEY
+		openAiKey: process.env.OPENAI_API_KEY,
+		orgId: process.env.ORG
 	}
 });
